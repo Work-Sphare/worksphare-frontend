@@ -1,10 +1,9 @@
-import './App.css'
 import React from 'react'
 
 const App = () => {
   return (
     <div>
-      Hii
+      <h1>WorkSpahre</h1>
     </div>
   )
 }
