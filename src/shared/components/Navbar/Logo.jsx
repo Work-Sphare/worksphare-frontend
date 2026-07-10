@@ -1,15 +1,21 @@
+import logo from "../../../assets/logos/workspare-icon.png";
+
 const Logo = () => {
   return (
-    <div className="flex items-center gap-3 cursor-pointer">
-      <div className="h-10 w-10 rounded-xl bg-blue-600"></div>
+    <div className="flex cursor-pointer items-center gap-3">
+      <img
+        src={logo}
+        alt="WorkSphare Logo"
+        className="h-14 w-14 object-contain"
+      />
 
       <div>
-        <h1 className="text-2xl font-extrabold">
+        <h1 className="text-3xl font-extrabold leading-none">
           <span className="text-blue-700">Works</span>
           <span className="text-orange-500">phare</span>
         </h1>
 
-        <p className="text-xs text-gray-500">
+        <p className="mt-1 text-xs text-slate-500">
           Connecting Skills • Building Trust
         </p>
       </div>
