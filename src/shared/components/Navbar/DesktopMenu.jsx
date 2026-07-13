@@ -1,16 +1,27 @@
 import navigation from "../../constants/navigation";
 
 const DesktopMenu = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
-    <nav className="hidden lg:flex items-center gap-8">
+    <nav className="hidden items-center gap-8 lg:flex">
       {navigation.map((item) => (
-        <a
+        <button
           key={item.title}
-          href={item.path}
-          className="font-medium text-slate-700 transition hover:text-blue-600"
+          onClick={() => scrollToSection(item.target)}
+          className="font-medium text-slate-700 transition hover:text-blue-600 hover:cursor-pointer"
         >
           {item.title}
-        </a>
+        </button>
       ))}
     </nav>
   );

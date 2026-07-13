@@ -1,23 +1,23 @@
 const navigation = [
   {
     title: "Home",
-    path: "/",
+    target: "hero",
   },
   {
     title: "Services",
-    path: "/services",
+    target: "services",
   },
   {
     title: "Become a Worker",
-    path: "/worker/register",
+    target: "become-worker",
   },
   {
     title: "About",
-    path: "/about",
+    target: "about",
   },
   {
     title: "Contact",
-    path: "/contact",
+    target: "footer",
   },
 ];
 
