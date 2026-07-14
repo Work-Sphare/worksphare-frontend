@@ -22,7 +22,6 @@ const WorkerIllustration = () => {
         }}
         className="w-[420px]"
       />
-
     </div>
   );
 };

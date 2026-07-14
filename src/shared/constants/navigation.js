@@ -13,7 +13,7 @@ const navigation = [
   },
   {
     title: "About",
-    target: "about",
+    target: "why-choose",
   },
   {
     title: "Contact",

@@ -1,44 +1,46 @@
 import { useEffect, useState } from "react";
+import useInView from "../../hooks/useInView";
 
 const AnimatedCounter = ({
   end,
   duration = 2000,
   suffix = "+",
-  start = false,
-  onComplete,
 }) => {
+
+  const { ref, isVisible } = useInView();
+
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (!start) return;
 
-    let current = 0;
+    if (!isVisible) return;
+
+    let start = 0;
 
     const increment = end / (duration / 16);
 
     const timer = setInterval(() => {
-      current += increment;
 
-      if (current >= end) {
+      start += increment;
+
+      if (start >= end) {
         setCount(end);
         clearInterval(timer);
-
-        if (onComplete) {
-          onComplete();
-        }
       } else {
-        setCount(Math.floor(current));
+        setCount(Math.floor(start));
       }
+
     }, 16);
 
     return () => clearInterval(timer);
-  }, [start, end, duration, onComplete]);
+
+  }, [isVisible, end, duration]);
 
   return (
-    <>
+    <span ref={ref}>
       {count.toLocaleString()}
       {suffix}
-    </>
+    </span>
   );
 };
 

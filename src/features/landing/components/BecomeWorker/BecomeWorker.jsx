@@ -3,15 +3,13 @@ import { ArrowRight } from "lucide-react";
 
 import WorkerIllustration from "./WorkerIllustration";
 import Benefits from "./Benefits";
-import SectionBackground from "../../../../shared/components/SectionBackground/SectionBackground";
 
 const BecomeWorker = () => {
   return (
     <section
       id="become-worker"
-      className="scroll-mt-24 bg-white py-28"
+      className="bg-gradient-to-br from-blue-50 via-white to-orange-50 py-28"
     >
-        <SectionBackground variant="blobs" />
       <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
 
         {/* Left */}

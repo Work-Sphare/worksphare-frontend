@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import { staggerContainer, fadeUp } from "../../../../assets/animations/variants";
 import ServiceCard from "./ServiceCard";
 import services from "./servicesData";
+import FloatingElements from "../../../../shared/components/backgrounds/FloatingElements";
 
 const Services = () => {
   return (
-    <section id="services" className="bg-white py-28 scroll-mt-24">
+    <section id="services" className="relative overflow-hidden bg-white py-28 scroll-mt-24">
+        <FloatingElements />
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Section Heading */}
