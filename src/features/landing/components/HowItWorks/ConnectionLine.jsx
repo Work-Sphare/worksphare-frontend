@@ -9,7 +9,7 @@ const ConnectionLine = ({ direction = "left" }) => {
 
       {direction === "left" && (
         <>
-          <div className="relative flex h-[6px] w-64 items-center overflow-hidden rounded-full bg-slate-200">
+          <div className="relative flex h-[6px] w-54 items-center overflow-hidden rounded-full bg-slate-200">
 
             <div className="absolute inset-0 bg-gradient-to-r from-blue-100 via-blue-200 to-orange-100" />
 
@@ -52,7 +52,7 @@ const ConnectionLine = ({ direction = "left" }) => {
             className="mr-1 text-orange-500"
           />
 
-          <div className="relative flex h-[6px] w-64 items-center overflow-hidden rounded-full bg-slate-200">
+          <div className="relative flex h-[6px] w-54 items-center overflow-hidden rounded-full bg-slate-200">
 
             <div className="absolute inset-0 bg-gradient-to-r from-orange-100 via-blue-200 to-blue-100" />
 

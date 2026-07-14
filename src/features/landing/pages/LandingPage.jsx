@@ -1,5 +1,6 @@
 import Navbar from "../../../shared/components/Navbar/Navbar";
 import BecomeWorker from "../components/BecomeWorker/BecomeWorker";
+import DownloadApp from "../components/DownloadApp/DownloadApp";
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import HowItWorks from "../components/HowItWorks/HowItWorks";
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <BecomeWorker />
       <WhyChoose />
       <Testimonials />
+      <DownloadApp />
      <Footer/>
     </>
   );
