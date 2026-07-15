@@ -7,7 +7,7 @@ import Section from "../../../../shared/layouts/Section";
 
 const Services = () => {
   return (
-    <Section id="services" className="bg-white">
+    <Section id="services" className="bg-gradient-to-br from-pink-50 via-white to-green-50">
         <FloatingElements />
       <div className="mx-auto max-w-7xl px-6">
 
