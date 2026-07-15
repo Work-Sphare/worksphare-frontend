@@ -11,9 +11,9 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative overflow-hidden bg-slate-50 py-32"
+      className="relative overflow-hidden bg-slate-50 py-16 md:py-20 lg:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         {/* Heading */}
 
         <motion.div
@@ -21,19 +21,19 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mb-20 text-center"
+          className="mb-12 text-center lg:mb-20"
         >
           <span className="inline-flex items-center gap-2 rounded-full bg-red-100 px-5 py-2 font-semibold text-red-600">
             <Heart size={16} />
             Loved by Our Community
           </span>
 
-          <h2 className="mt-6 text-5xl font-extrabold text-slate-900">
+          <h2 className="mt-6 text-3xl font-extrabold text-slate-900 sm:text-4xl lg:text-5xl">
             Trusted by Skilled Professionals
             <br />& Happy Customers
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-500">
+         <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-500 sm:text-lg sm:leading-8">
             From finding reliable workers to growing independent careers,
             WorkSphare is creating meaningful connections every day.
           </p>
@@ -51,11 +51,11 @@ const Testimonials = () => {
 
       {/* Fade Left */}
 
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-slate-50 to-transparent" />
+      <div className="pointer-events-none absolute left-0 top-0 hidden h-full w-40 bg-gradient-to-r from-slate-50 to-transparent lg:block" />
 
       {/* Fade Right */}
 
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-slate-50 to-transparent" />
+      <div className="pointer-events-none absolute right-0 top-0 hidden h-full w-40 bg-gradient-to-l from-slate-50 to-transparent lg:block" />
     </section>
   );
 };

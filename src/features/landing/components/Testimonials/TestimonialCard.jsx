@@ -11,32 +11,13 @@ const TestimonialCard = ({ testimonial }) => {
       transition={{
         duration: 0.3,
       }}
-      className="
-        relative
-        w-[360px]
-        overflow-hidden
-        rounded-3xl
-        border
-        border-slate-200
-        bg-white
-        p-8
-        shadow-xl
-        transition-all
-        duration-300
-        hover:border-blue-200
-        hover:shadow-[0_20px_60px_rgba(37,99,235,0.15)]
-      "
+      className="relative w-[290px] sm:w-[330px] lg:w-[360px] overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 sm:p-6 lg:p-8 shadow-xl transition-all duration-300 hover:border-blue-200 hover:shadow-[0_20px_60px_rgba(37,99,235,0.15)]"
     >
       {/* Quote Icon */}
 
       <Quote
-        size={60}
-        className="
-          absolute
-          -top-2
-          right-5
-          text-blue-50
-        "
+        size={40}
+        className="absolute -top-1 right-4 text-blue-50 sm:-top-2 sm:right-5"
       />
 
       {/* Rating */}
@@ -55,7 +36,7 @@ const TestimonialCard = ({ testimonial }) => {
 
       {/* Message */}
 
-      <p className="relative z-10 min-h-[95px] text-lg leading-8 text-slate-600">
+      <p className="relative z-10 min-h-[80px] text-base leading-7 text-slate-600 sm:min-h-[95px] sm:text-lg sm:leading-8">
         "{testimonial.message}"
       </p>
 
@@ -73,9 +54,7 @@ const TestimonialCard = ({ testimonial }) => {
 
           <div
             className="
-              flex
-              h-16
-              w-16
+              flex h-12 w-12 sm:h-14 sm:w-14 lg:h-16 lg:w-16
               items-center
               justify-center
               rounded-2xl
@@ -95,7 +74,7 @@ const TestimonialCard = ({ testimonial }) => {
 
           <div>
 
-            <h4 className="font-bold text-slate-900">
+            <h4 className="text-sm font-bold text-slate-900 sm:text-base">
               {testimonial.name}
             </h4>
 

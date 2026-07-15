@@ -8,20 +8,15 @@ const TestimonialsRow = ({
   const items = [...testimonials, ...testimonials];
 
   return (
-    <div className="overflow-hidden py-4">
+    <div className="overflow-x-auto overflow-y-hidden py-4 scrollbar-hide lg:overflow-hidden">
       <motion.div
-        animate={{
-          x:
-            direction === "left"
-              ? ["0%", "-50%"]
-              : ["-50%", "0%"],
-        }}
+       animate={window.innerWidth >= 1024 ? { x: direction === "left" ? ["0%", "-50%"] : ["-50%", "0%"] } : {}}
         transition={{
           duration: 35,
           repeat: Infinity,
           ease: "linear",
         }}
-        className="flex w-max gap-8"
+        className="flex w-max gap-5 lg:gap-8"
       >
         {items.map((testimonial, index) => (
           <TestimonialCard
