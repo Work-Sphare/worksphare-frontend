@@ -5,19 +5,19 @@ import AnimatedCounter from "./AnimatedCounter";
 const counters = [
   {
     id: 1,
-    end: 10000,
+    end: 1000,
     label: "Workers",
     color: "text-blue-600",
   },
   {
     id: 2,
-    end: 5000,
+    end: 500,
     label: "Customers",
     color: "text-orange-500",
   },
   {
     id: 3,
-    end: 100,
+    end: 80,
     label: "Services",
     color: "text-green-600",
   },
