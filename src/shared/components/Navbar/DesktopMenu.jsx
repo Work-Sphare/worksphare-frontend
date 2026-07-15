@@ -15,7 +15,7 @@ const DesktopMenu = () => {
   };
 
   return (
-    <nav className="hidden items-center gap-8 lg:flex">
+    <nav className="hidden items-center gap-5 xl:gap-8 lg:flex">
       {navigation.map((item) => (
         <button
           key={item.title}

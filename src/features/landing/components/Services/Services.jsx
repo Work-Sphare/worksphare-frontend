@@ -3,10 +3,11 @@ import { staggerContainer, fadeUp } from "../../../../assets/animations/variants
 import ServiceCard from "./ServiceCard";
 import services from "./servicesData";
 import FloatingElements from "../../../../shared/components/backgrounds/FloatingElements";
+import Section from "../../../../shared/layouts/Section";
 
 const Services = () => {
   return (
-    <section id="services" className="relative overflow-hidden bg-white py-28 scroll-mt-24">
+    <Section id="services" className="bg-white">
         <FloatingElements />
       <div className="mx-auto max-w-7xl px-6">
 
@@ -55,7 +56,7 @@ const Services = () => {
         </motion.div>
 
       </div>
-    </section>
+    </Section>
   );
 };
 

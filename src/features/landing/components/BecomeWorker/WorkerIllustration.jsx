@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import worker from "../../../../assets/illustrations/civil-worker.svg";
+import worker from "../../../../assets/illustrations/worker.png";
 import JobNotification from "./JobNotification";
 
 const WorkerIllustration = () => {
@@ -20,7 +20,7 @@ const WorkerIllustration = () => {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="w-[420px]"
+        className="w-[900px] h-[500px]"
       />
     </div>
   );

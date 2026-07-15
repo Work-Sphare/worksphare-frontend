@@ -61,7 +61,7 @@ export const quickLinks = [
 export const contact = [
   {
     icon: MapPin,
-    value: "Hyderabad, Telangana",
+    value: "Kavali, Andhra Pradesh",
   },
   {
     icon: Phone,
