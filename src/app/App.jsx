@@ -1,11 +1,7 @@
-import React from 'react'
+import LandingPage from "../features/landing/pages/LandingPage";
 
-const App = () => {
-  return (
-    <div>
-      <h1>WorkSpahre</h1>
-    </div>
-  )
+function App() {
+  return <LandingPage/>;
 }
 
-export default App
+export default App;
