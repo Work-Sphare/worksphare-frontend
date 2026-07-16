@@ -6,15 +6,15 @@ const JourneyColumn = ({
   steps,
 }) => {
   return (
-    <div>
+    <div className="min-w-0">
 
-      <div className="mb-10 flex items-center gap-3">
+      <div className="mb-8 flex items-center justify-center gap-3 xl:justify-start">
 
         <span className="text-4xl">
           {emoji}
         </span>
 
-        <h2 className="text-3xl font-bold text-slate-800">
+        <h2 className="text-center text-2xl font-bold text-slate-800 sm:text-3xl xl:text-left">
           {title}
         </h2>
 

@@ -5,7 +5,7 @@ import logo from "../../../../assets/logos/workspare-icon.png";
 
 const Connection = () => {
   return (
-    <div className="hidden lg:flex flex-col items-center justify-center">
+    <div className="hidden lg:flex lg:w-[260px] xl:w-auto flex-col items-center justify-center">
       {/* Animated Connection */}
 
       <div className="flex items-center gap-5">
@@ -50,24 +50,12 @@ const Connection = () => {
           />
 
           <div
-            className="
-              relative
-              flex
-              h-28
-              w-28
-              items-center
-              justify-center
-              rounded-full
-              bg-white
-              shadow-2xl
-              border
-              border-slate-100
-            "
+            className="relative flex h-24 w-24 items-center justify-center rounded-full border border-slate-100 bg-white shadow-2xl 2xl:h-28 2xl:w-28"
           >
             <img
               src={logo}
               alt="WorkSphare"
-              className="h-20 w-20 object-contain"
+              className="h-16 w-16 object-contain 2xl:h-20 2xl:w-20"
             />
           </div>
         </motion.div>
@@ -75,9 +63,9 @@ const Connection = () => {
         <ConnectionLine direction="right" />
       </div>
 
-      <h3 className="mt-4 text-3xl font-bold text-slate-900">WorkSphare</h3>
+      <h3 className="mt-4 text-2xl font-bold text-slate-900 2xl:text-3xl">WorkSphare</h3>
 
-      <p className="mt-3 max-w-xs text-center text-slate-500 leading-7">
+     <p className="mt-3 max-w-[220px] text-center text-sm leading-6 text-slate-500 2xl:max-w-xs 2xl:text-base 2xl:leading-7">
         Connecting Customers with Skilled Workers
       </p>
     </div>

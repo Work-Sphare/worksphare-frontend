@@ -10,10 +10,7 @@ const StepIcon = ({ Icon }) => {
       transition={{
         duration: .3,
       }}
-      className="
-        flex
-        h-16
-        w-16
+      className="flex h-14 w-14 sm:h-16 sm:w-16
         items-center
         justify-center
         rounded-2xl

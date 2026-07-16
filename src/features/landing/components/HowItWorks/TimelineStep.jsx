@@ -12,7 +12,7 @@ const TimelineStep = ({ item, isLast }) => {
       transition={{
         duration: 0.5,
       }}
-      className="relative flex gap-6"
+      className="relative flex gap-4 lg:gap-5 xl:gap-6"
     >
       {/* Timeline */}
 
@@ -27,10 +27,9 @@ const TimelineStep = ({ item, isLast }) => {
             duration: 2,
             repeat: Infinity,
           }}
-          className="relative flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600
-                    to-blue-500 border-4 border-white shadow-[0_15px_35px_rgba(37,99,235,0.35)]"
+          className="relative flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-blue-600 to-blue-500 shadow-[0_15px_35px_rgba(37,99,235,0.35)]"
         >
-          <span className="text-lg font-bold text-white">
+          <span className="text-base font-bold text-white lg:text-lg">
             {String(item.step).padStart(2, "0")}
           </span>
 
@@ -40,19 +39,19 @@ const TimelineStep = ({ item, isLast }) => {
         </motion.div>
 
         {!isLast && (
-          <div className="mt-2 h-20 w-[3px] rounded-full bg-gradient-to-b from-blue-500 to-blue-100" />
+          <div cclassName="mt-2 h-16 lg:h-20 w-[3px] rounded-full bg-gradient-to-b from-blue-500 to-blue-100"/>
         )}
       </div>
 
       {/* Content */}
 
-      <div className="pb-10 flex gap-5">
+      <div className="flex flex-1 gap-3 pb-8 lg:gap-5 lg:pb-10">
         <StepIcon Icon={Icon} color="text-orange-500" />
 
         <div>
-          <h3 className="text-xl font-bold text-slate-900">{item.title}</h3>
+          <h3 className="text-lg font-bold text-slate-900 lg:text-xl">{item.title}</h3>
 
-          <p className="mt-2 text-slate-500 leading-7">{item.description}</p>
+          <p className="mt-2 text-sm leading-6 text-slate-500 lg:text-base lg:leading-7">{item.description}</p>
         </div>
       </div>
     </motion.div>
