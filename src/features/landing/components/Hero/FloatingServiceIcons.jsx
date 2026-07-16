@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const icons = [
   {
@@ -63,6 +64,7 @@ const icons = [
 ];
 
 const FloatingServiceIcons = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <>
       {icons.map(({ Icon, delay, ...position }, index) => (
@@ -77,7 +79,7 @@ const FloatingServiceIcons = () => {
           }}
           transition={{
             duration: 5,
-            repeat: Infinity,
+            repeat: reduceMotion ? 0 : Infinity,
             delay,
             ease: "easeInOut",
           }}

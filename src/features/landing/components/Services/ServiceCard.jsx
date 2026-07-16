@@ -27,6 +27,7 @@ const ServiceCard = ({ service }) => {
           }}
           src={service.image}
           alt={service.title}
+          loading="lazy"
           className="h-44 object-contain"
         />
 

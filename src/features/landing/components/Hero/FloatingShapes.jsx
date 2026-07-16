@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const FloatingShapes = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <>
       <motion.div
@@ -11,7 +13,7 @@ const FloatingShapes = () => {
         }}
         transition={{
           duration: 8,
-          repeat: Infinity,
+          repeat: reduceMotion ? 0 : Infinity,
           ease: "easeInOut",
         }}
         className="absolute left-10 top-24 h-72 w-72 rounded-full bg-blue-400/25 blur-[100px]"
@@ -25,7 +27,7 @@ const FloatingShapes = () => {
         }}
         transition={{
           duration: 10,
-          repeat: Infinity,
+          repeat:reduceMotion ? 0 : Infinity,
           ease: "easeInOut",
         }}
         className="absolute right-10 bottom-10 h-80 w-80 rounded-full bg-orange-400/20 blur-[120px]"

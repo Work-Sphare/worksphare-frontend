@@ -5,8 +5,10 @@ import features from "./downloadData";
 import FeatureList from "./FeatureList";
 import DownloadButtons from "./DownloadButtons";
 import homeScreen from "../../../../assets/illustrations/homescreen.png";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const DownloadApp = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <section
       id="download-app"
@@ -20,7 +22,7 @@ const DownloadApp = () => {
             Mobile App
           </span>
 
-          <h2 className="mt-6 text-5xl font-extrabold leading-tight text-slate-900">
+          <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900">
             Everything You Need.
             <br />
             In One App.
@@ -52,7 +54,7 @@ const DownloadApp = () => {
             }}
             transition={{
               duration: 5,
-              repeat: Infinity,
+              repeat: reduceMotion ? 0 : Infinity,
               ease: "easeInOut",
             }}
             className="
@@ -87,6 +89,7 @@ const DownloadApp = () => {
             <img
               src={homeScreen}
               alt="WorkSphare App"
+              loading="lazy"
               className="
         absolute
         left-1/2
@@ -108,7 +111,7 @@ const DownloadApp = () => {
             }}
             transition={{
               duration: 3,
-              repeat: Infinity,
+              repeat: reduceMotion ? 0 : Infinity,
             }}
             className="
       absolute
@@ -134,7 +137,7 @@ const DownloadApp = () => {
             }}
             transition={{
               duration: 4,
-              repeat: Infinity,
+              repeat: reduceMotion ? 0 : Infinity,
             }}
             className="
       absolute

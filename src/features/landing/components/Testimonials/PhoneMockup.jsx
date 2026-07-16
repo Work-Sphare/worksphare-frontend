@@ -1,7 +1,9 @@
 import { Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const PhoneMockup = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <motion.div
       animate={{
@@ -9,7 +11,7 @@ const PhoneMockup = () => {
       }}
       transition={{
         duration: 4,
-        repeat: Infinity,
+        repeat: reduceMotion ? 0 : Infinity,
         ease: "easeInOut",
       }}
       className="

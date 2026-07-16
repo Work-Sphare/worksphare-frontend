@@ -35,7 +35,7 @@ const BecomeWorker = () => {
             Join WorkSphare
           </span>
 
-          <h2 className="mt-6 text-5xl font-extrabold leading-tight text-slate-900">
+          <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900">
             Become a
             <span className="text-blue-600"> Verified </span>
             Professional

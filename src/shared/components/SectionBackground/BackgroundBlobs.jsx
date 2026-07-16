@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const BackgroundBlobs = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <>
       {/* Blue Blob */}
@@ -12,7 +14,7 @@ const BackgroundBlobs = () => {
         }}
         transition={{
           duration: 10,
-          repeat: Infinity,
+          repeat: reduceMotion ? 0 : Infinity,
           ease: "easeInOut",
         }}
         className="
@@ -36,7 +38,7 @@ const BackgroundBlobs = () => {
         }}
         transition={{
           duration: 12,
-          repeat: Infinity,
+          repeat: reduceMotion ? 0 : Infinity,
           ease: "easeInOut",
         }}
         className="

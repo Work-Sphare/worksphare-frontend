@@ -30,6 +30,7 @@ const WorkerCard = ({ worker }) => {
         <img
           src={worker.image}
           alt={worker.profession}
+          loading="lazy"
          className="relative z-10 h-52 object-contain sm:h-64 lg:h-72"
         />
       </div>

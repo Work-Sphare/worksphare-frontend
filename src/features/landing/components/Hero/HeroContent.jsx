@@ -14,7 +14,7 @@ const HeroContent = () => {
 
       <AnimatedProfession />
 
-      <h1 className="text-6xl font-extrabold leading-tight text-slate-900">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900">
         Near You
       </h1>
       <SearchBox />

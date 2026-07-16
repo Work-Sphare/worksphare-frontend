@@ -6,6 +6,7 @@ const Logo = () => {
       <img
         src={logo}
         alt="WorkSphare Logo"
+        loading="lazy"
         className="h-9 w-9 sm:h-11 sm:w-11 lg:h-14 lg:w-14 object-contain"
       />
 

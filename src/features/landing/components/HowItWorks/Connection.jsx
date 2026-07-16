@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import ConnectionLine from "./ConnectionLine";
 
 import logo from "../../../../assets/logos/workspare-icon.png";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const Connection = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <div className="hidden lg:flex lg:w-[260px] xl:w-auto flex-col items-center justify-center">
       {/* Animated Connection */}
@@ -20,7 +22,7 @@ const Connection = () => {
           }}
           transition={{
             duration: 4,
-            repeat: Infinity,
+            repeat: reduceMotion ? 0 : Infinity,
             ease: "easeInOut",
           }}
           className="relative"
@@ -34,7 +36,7 @@ const Connection = () => {
             }}
             transition={{
               duration: 3,
-              repeat: Infinity,
+              repeat: reduceMotion ? 0 : Infinity,
               ease: "easeInOut",
             }}
             className="
@@ -55,6 +57,7 @@ const Connection = () => {
             <img
               src={logo}
               alt="WorkSphare"
+              loading="lazy"
               className="h-16 w-16 object-contain 2xl:h-20 2xl:w-20"
             />
           </div>

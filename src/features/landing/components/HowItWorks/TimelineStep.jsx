@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import StepIcon from "./StepIcon";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const TimelineStep = ({ item, isLast }) => {
+  const reduceMotion = usePrefersReducedMotion();
   const Icon = item.icon;
 
   return (
@@ -25,7 +27,7 @@ const TimelineStep = ({ item, isLast }) => {
           }}
           transition={{
             duration: 2,
-            repeat: Infinity,
+            repeat: reduceMotion ? 0 : Infinity,
           }}
           className="relative flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-full border-4 border-white bg-gradient-to-br from-blue-600 to-blue-500 shadow-[0_15px_35px_rgba(37,99,235,0.35)]"
         >
@@ -39,7 +41,7 @@ const TimelineStep = ({ item, isLast }) => {
         </motion.div>
 
         {!isLast && (
-          <div cclassName="mt-2 h-16 lg:h-20 w-[3px] rounded-full bg-gradient-to-b from-blue-500 to-blue-100"/>
+          <div className="mt-2 h-16 lg:h-20 w-[3px] rounded-full bg-gradient-to-b from-blue-500 to-blue-100"/>
         )}
       </div>
 

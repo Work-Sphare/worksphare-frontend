@@ -30,6 +30,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
       {/* Drawer */}
 
       <aside
+        aria-label="Mobile Navigation"
         className={`fixed top-0 right-0 z-50 h-screen w-[85%] max-w-[320px] bg-white shadow-2xl transition-transform duration-300 lg:hidden ${
           isOpen
             ? "translate-x-0"
@@ -44,6 +45,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
 
           <button
             onClick={onClose}
+            aria-label="Close Menu"
             className="rounded-lg p-2 hover:bg-slate-100"
           >
             <X />

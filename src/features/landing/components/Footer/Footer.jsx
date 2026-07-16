@@ -38,6 +38,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="WorkSphare"
+                loading="lazy"
                 className="h-14 w-14"
               />
 

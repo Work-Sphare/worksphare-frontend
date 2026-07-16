@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const FeatureItem = ({ feature, index }) => {
+  const reduceMotion = usePrefersReducedMotion();
   const Icon = feature.icon;
 
   return (
@@ -33,7 +35,7 @@ const FeatureItem = ({ feature, index }) => {
         }}
         transition={{
           duration: 3,
-          repeat: Infinity,
+          repeat: reduceMotion ? 0 : Infinity,
           delay: index * 0.3,
         }}
         className={`

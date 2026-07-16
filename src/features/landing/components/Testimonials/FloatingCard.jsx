@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import { CheckCircle2, Star } from "lucide-react";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const FloatingCard = ({
   testimonial,
   className = "",
   delay = 0,
 }) => {
+  const reduceMotion = usePrefersReducedMotion ();
   return (
     <motion.div
       animate={{
@@ -14,7 +16,7 @@ const FloatingCard = ({
       transition={{
         duration: 4,
         delay,
-        repeat: Infinity,
+        repeat: reduceMotion ? 0 : Infinity,
         ease: "easeInOut",
       }}
       whileHover={{

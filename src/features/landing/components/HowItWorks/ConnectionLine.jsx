@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { ChevronRight, ChevronLeft } from "lucide-react";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const ConnectionLine = ({ direction = "left" }) => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <div className="flex items-center">
 
@@ -19,7 +21,7 @@ const ConnectionLine = ({ direction = "left" }) => {
               }}
               transition={{
                 duration: 2,
-                repeat: Infinity,
+                repeat: reduceMotion ? 0 : Infinity,
                 ease: "linear",
               }}
               className="
@@ -62,7 +64,7 @@ const ConnectionLine = ({ direction = "left" }) => {
               }}
               transition={{
                 duration: 2,
-                repeat: Infinity,
+                repeat: reduceMotion ? 0 : Infinity,
                 ease: "linear",
               }}
               className="

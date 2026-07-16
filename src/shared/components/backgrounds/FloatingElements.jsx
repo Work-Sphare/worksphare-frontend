@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const particles = [
   {
@@ -67,6 +68,7 @@ const particles = [
   },
 ];
 const FloatingElements = () => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
@@ -81,7 +83,7 @@ const FloatingElements = () => {
             }}
           transition={{
             duration: item.duration,
-            repeat: Infinity,
+            repeat: reduceMotion ? 0 : Infinity,
             ease: "easeInOut",
             delay: index,
           }}

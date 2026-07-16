@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
 
 const FloatingBadge = ({ icon, text, className }) => {
+  const reduceMotion = usePrefersReducedMotion();
   return (
     <motion.div
       animate={{
@@ -8,7 +10,7 @@ const FloatingBadge = ({ icon, text, className }) => {
       }}
       transition={{
         duration: 3,
-        repeat: Infinity,
+        repeat: reduceMotion ? 0 : Infinity,
         ease: "easeInOut",
       }}
       className={`absolute flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-md border border-white/50 px-4 py-2 shadow-xl ${className}`}
