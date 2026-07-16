@@ -1,4 +1,4 @@
-import navigation from "../../constants/navigation";
+import navigation from "../../../constants/navigation"
 import { X } from "lucide-react";
 
 const MobileMenu = ({ isOpen, onClose }) => {

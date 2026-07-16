@@ -1,4 +1,4 @@
-import CounterGroup from "../../../../shared/components/AnimationCounter/CounterGroup";
+import CounterGroup from "../../../../shared/components/common/AnimationCounter/CounterGroup";
 
 const Stats = () => {
   return <CounterGroup />;

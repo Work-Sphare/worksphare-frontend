@@ -67,14 +67,14 @@ const services = [
     color: "from-purple-100 to-pink-100",
   },
   {
-    id: 8,
+    id: 9,
     title: "Technician",
     workers: "420+",
     image: technician,
     color: "from-purple-100 to-pink-100",
   },
   {
-    id: 8,
+    id: 10,
     title: "Coolie",
     workers: "220+",
     image: coolie,

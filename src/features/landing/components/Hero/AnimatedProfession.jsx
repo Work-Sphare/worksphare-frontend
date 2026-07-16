@@ -35,7 +35,7 @@ const professions = [
     color: "text-orange-500",
   },
   {
-    name: "Makeup Artists",
+    name: "Beauticians",
     color: "text-yellow-500",
   },
   {

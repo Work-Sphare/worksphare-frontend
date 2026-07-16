@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { staggerContainer, fadeUp } from "../../../../assets/animations/variants";
 import ServiceCard from "./ServiceCard";
 import services from "./servicesData";
-import FloatingElements from "../../../../shared/components/backgrounds/FloatingElements";
-import Section from "../../../../shared/layouts/Section";
+import Section from "../../../../shared/components/common/Section";
+import FloatingElements from "../../../../shared/components/backgrounds/SectionBackground/FloatingElements";
 
 const Services = () => {
   return (

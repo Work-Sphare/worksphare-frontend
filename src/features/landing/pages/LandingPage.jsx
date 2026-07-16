@@ -1,4 +1,4 @@
-import Navbar from "../../../shared/components/Navbar/Navbar";
+import Navbar from "../../../shared/components/layout/Navbar/Navbar";
 import BecomeWorker from "../components/BecomeWorker/BecomeWorker";
 import DownloadApp from "../components/DownloadApp/DownloadApp";
 import Footer from "../components/Footer/Footer";
