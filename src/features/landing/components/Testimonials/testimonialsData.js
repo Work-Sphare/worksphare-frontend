@@ -6,7 +6,7 @@ const testimonials = [
     role: "Electrician",
     city: "Hyderabad",
     verified: true,
-    rating: 5,
+    rating: 3,
     message:
       "WorkSphare helped me find genuine customers near my locality. The booking process is smooth and reliable.",
   },
@@ -39,7 +39,7 @@ const testimonials = [
     role: "Customer",
     city: "Hyderabad",
     verified: true,
-    rating: 5,
+    rating: 4,
     message:
       "The verified worker system gave me complete confidence while booking home services.",
   },
@@ -50,7 +50,7 @@ const testimonials = [
     role: "Mechanic",
     city: "Delhi",
     verified: true,
-    rating: 5,
+    rating: 4,
     message:
       "The application is extremely easy to use and helps me connect with nearby customers every day.",
   },
