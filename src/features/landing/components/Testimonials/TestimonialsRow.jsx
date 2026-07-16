@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import TestimonialCard from "./TestimonialCard";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const TestimonialsRow = ({
   testimonials,

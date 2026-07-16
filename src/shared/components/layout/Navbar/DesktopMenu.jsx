@@ -1,5 +1,5 @@
-import navigation from "../../constants/navigation";
-import useActiveSection from "../../hooks/useActiveSection";
+import navigation from "../../../constants/navigation";
+import useActiveSection from "../../../../features/landing/hooks/useActiveSection";
 
 const DesktopMenu = () => {
   const activeSection = useActiveSection(navigation.map((item) => item.target));

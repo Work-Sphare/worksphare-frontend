@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import worker from "../../../../assets/illustrations/worker.png";
 import JobNotification from "./JobNotification";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../../../features/landing/hooks/usePrefersReducedMotion";
 
 const WorkerIllustration = () => {
   const reduceMotion = usePrefersReducedMotion();

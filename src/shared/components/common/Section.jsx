@@ -1,4 +1,4 @@
-import { SECTION } from "../constants/layout";
+import { SECTION } from "../../constants/layout";
 
 const Section = ({
   id,

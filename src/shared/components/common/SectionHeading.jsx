@@ -1,4 +1,4 @@
-import { HEADING } from "../constants/layout";
+import { HEADING } from "../../constants/layout";
 
 const SectionHeading = ({
   badge,

@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 import { motion } from "framer-motion";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const icons = [
   {

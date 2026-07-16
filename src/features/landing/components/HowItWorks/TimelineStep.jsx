@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import StepIcon from "./StepIcon";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const TimelineStep = ({ item, isLast }) => {
   const reduceMotion = usePrefersReducedMotion();

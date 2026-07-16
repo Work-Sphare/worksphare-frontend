@@ -5,7 +5,7 @@ import features from "./downloadData";
 import FeatureList from "./FeatureList";
 import DownloadButtons from "./DownloadButtons";
 import homeScreen from "../../../../assets/illustrations/homescreen.png";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const DownloadApp = () => {
   const reduceMotion = usePrefersReducedMotion();

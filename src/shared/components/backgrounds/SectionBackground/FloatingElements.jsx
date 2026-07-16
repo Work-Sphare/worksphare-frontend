@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../../../features/landing/hooks/usePrefersReducedMotion";
 
 const particles = [
   {

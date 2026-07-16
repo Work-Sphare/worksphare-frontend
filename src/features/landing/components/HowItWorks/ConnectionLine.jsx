@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronRight, ChevronLeft } from "lucide-react";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../../../features/landing/hooks/usePrefersReducedMotion";
 
 const ConnectionLine = ({ direction = "left" }) => {
   const reduceMotion = usePrefersReducedMotion();

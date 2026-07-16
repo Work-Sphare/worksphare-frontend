@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import useInView from "../../hooks/useInView";
+import useInView from "../../../../features/landing/hooks/useInView";
 import AnimatedCounter from "./AnimatedCounter";
 
 const counters = [

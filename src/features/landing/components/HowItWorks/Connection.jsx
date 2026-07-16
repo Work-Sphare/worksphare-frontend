@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ConnectionLine from "./ConnectionLine";
 
 import logo from "../../../../assets/logos/workspare-icon.png";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../hooks/usePrefersReducedMotion";
 
 const Connection = () => {
   const reduceMotion = usePrefersReducedMotion();

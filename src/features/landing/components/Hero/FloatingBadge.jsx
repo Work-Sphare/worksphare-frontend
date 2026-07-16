@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import usePrefersReducedMotion from "../../../../shared/hooks/usePrefersReducedMotion";
+import usePrefersReducedMotion from "../../../../features/landing/hooks/usePrefersReducedMotion";
 
 const FloatingBadge = ({ icon, text, className }) => {
   const reduceMotion = usePrefersReducedMotion();
