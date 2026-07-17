@@ -3,7 +3,7 @@ import { staggerContainer, fadeUp } from "../../../../assets/animations/variants
 import ServiceCard from "./ServiceCard";
 import services from "./servicesData";
 import Section from "../../../../shared/components/common/Section";
-import FloatingElements from "../../../../shared/components/backgrounds/SectionBackground/FloatingElements";
+import FloatingElements from "@/shared/components/backgrounds/SectionBackground/FloatingElements";
 
 const Services = () => {
   return (
